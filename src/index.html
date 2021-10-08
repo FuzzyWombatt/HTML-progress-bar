@@ -10,15 +10,33 @@
   </head>
   <body>
     <div class='text-center'>
-        <div class='flex justify-between relative mb-8 w-96'>
-          <div></div>
-          <div>1</div>
-          <div>2</div>
-          <div>3</div>
-          <div>4</div>
+        <div class='
+          flex 
+          justify-between 
+          relative 
+          mb-8 
+          w-96 
+          p-cont-before
+          '>
+          <div class='
+            bg-blue-700 
+            absolute 
+            top-1/2 
+            left-0 
+            h-1 
+            w-0 
+            z-bh 
+            trans-y-neg-50
+            '>
+          
+          </div>
+          <div class='bg-white rounded-full h-8 w-8 flex items-center justify-center border-gray-400 border-2'>1</div>
+          <div class='bg-white rounded-full h-8 w-8 flex items-center justify-center border-gray-400 border-2'>2</div>
+          <div class='bg-white rounded-full h-8 w-8 flex items-center justify-center border-gray-400 border-2'>3</div>
+          <div class='bg-white rounded-full h-8 w-8 flex items-center justify-center border-gray-400 border-2'>4</div>
         </div>
-        <button disabled id='Prev'>Prev</button>
-        <button class='bg-' id='Next'>Next</button>
+        <button class='border-2 rounded w-12' id='Prev'>Prev</button>
+        <button class='border-2 rounded w-12' id='Next'>Next</button>
     </div>
     <script src='index.js'></script>
   </body>

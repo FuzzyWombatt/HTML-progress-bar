@@ -16,4 +16,27 @@
     * {
         box-sizing: border-box;
     }
+
+    .z-bh {
+        z-index: -1;
+    }
+
+    .trans-y-neg-50 {
+        transform: translateY(-50%);
+    }
+
+    .tran-ease-4 {
+        transition: 0.4s ease;
+    }
+    .p-cont-before::before{
+        content: '';
+        background-color: #e0e0e0;
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        height: 4px;
+        width: 100%;
+        transform: translateY(-50%);
+        z-index: -1;
+    }
 }
