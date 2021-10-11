@@ -3,6 +3,11 @@
 @tailwind utilities;
 
 @layer utilities{
+    :root {
+        --line-border-fill: #3498db;
+        --line-border-empty: #e0e0e0;
+    }
+   
     body {
         font-family: 'Roboto', sans-serif;
         display: flex;
@@ -25,12 +30,12 @@
         transform: translateY(-50%);
     }
 
-    .tran-ease-4 {
+    .ease-4 {
         transition: 0.4s ease;
     }
     .p-cont-before::before{
         content: '';
-        background-color: #e0e0e0;
+        background-color: var(--line-border-empty);
         position: absolute;
         top: 50%;
         left: 0%;
@@ -39,4 +44,24 @@
         transform: translateY(-50%);
         z-index: -1;
     }
+    .active{
+        border-color: var(--line-border-fill);
+    }
+    
+    .btn {
+        background-color: var(--line-border-fill);
+        cursor: pointer;
+        font-size: 14px;
+    }
+
+    .btn:active {
+        transform: scale(.98);
+    }
+
+    .btn:disabled {
+        background-color: var(--line-border-empty);
+        cursor: not-allowed;
+    }
+
+
 }

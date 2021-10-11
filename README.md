@@ -1,4 +1,4 @@
-# HTML Tailwind starter
+# Progress Bar
 
 This start was build for people not needing any framework.
 It's sometimes enough to just have a plain HTML file, but leverage the power of Tailwind CSS.
